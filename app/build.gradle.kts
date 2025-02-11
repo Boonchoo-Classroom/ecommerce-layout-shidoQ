@@ -1,7 +1,8 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("com.android.application") version "8.7.3"
+    id("org.jetbrains.kotlin.android") version "1.9.21"
 }
+
 
 android {
     namespace = "scisrc.mobiledev.ecommercelayout"
@@ -50,4 +51,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 }
